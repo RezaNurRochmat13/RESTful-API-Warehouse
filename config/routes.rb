@@ -3,5 +3,8 @@ Rails.application.routes.draw do
   namespace :v1 do 
     get '/products', to: 'product#getAllProduct'
     get '/products/:productCode', to: 'product#getSingleProduct'
+    post '/products/', to: 'product#createPorduct'
+    put '/products/:productCode', to: 'product#updateProduct'
+    delete '/products/:productCode', to: 'product#deleteProduct'
   end
 end
