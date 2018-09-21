@@ -13,5 +13,7 @@ Rails.application.routes.draw do
     # PRODUCT CATEGORY ROUTES
     get '/product_categories', to: 'product_category#getAllCategoryProduct'
     get '/product_categories/:categoryCode', to: 'product_category#getSingleCategoryProduct'
+    post '/product_categories', to: 'product_category#createNewCategoryProduct'
+    put '/product_categories/:categoryCode', to: 'product_category#updateCategoryProduct'
   end
 end

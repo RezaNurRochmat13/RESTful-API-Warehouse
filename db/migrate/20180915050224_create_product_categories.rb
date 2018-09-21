@@ -3,8 +3,6 @@ class CreateProductCategories < ActiveRecord::Migration[5.2]
     create_table :product_categories do |t|
       t.string :categoryCode
       t.string :categoryName
-
-      t.timestamps
     end
   end
 end
